@@ -1,8 +1,11 @@
 class Employee:
+    number_of_employees =0
     def __init__(self, name, age, salary):
         self.name=name
         self.salary=salary
         self.age = age
+        Employee.number_of_employees +=1
+
     def greeting(self):
         print("Hi, my name is {} ".format(self.name))
 
@@ -27,12 +30,19 @@ class Hotel:
         return self.employees
 
 e1 = Employee("Johnny",25,10000)
+print("Nummber of Employees = {}".format(Employee.number_of_employees))
 e2=Employee("Hanna",42,1000)
+print("Nummber of Employees = {}".format(Employee.number_of_employees))
 e3 = Employee("Johny",24,100)
+print("Nummber of Employees = {}".format(Employee.number_of_employees))
 e4=Employee("Hana",43,10090)
+print("Nummber of Employees = {}".format(Employee.number_of_employees))
 e5 = secundEmployee("Johnny",25,10000)
+print("Nummber of Employees = {}".format(Employee.number_of_employees))
 e6= secundEmployee("Hanna",42,1000)
+print("Nummber of Employees = {}".format(Employee.number_of_employees))
 e7 = thirdEmployee("Johny",24,100)
+print("Nummber of Employees = {}".format(Employee.number_of_employees))
 e8=thirdEmployee("Hana",43,10090)
 
 h1=Hotel("ysdkk","Germany")
